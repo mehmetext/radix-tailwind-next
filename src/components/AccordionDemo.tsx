@@ -10,12 +10,12 @@ import { cn } from "@/utils/cn";
 export default function AccordionDemo() {
 	return (
 		<Accordion.Root
-			className="max-w-[300px] w-full flex flex-col bg-blue-50 rounded border border-blue-200"
+			className="max-w-[300px] w-full flex flex-col bg-blue-50 rounded overflow-hidden border border-blue-200"
 			type="single"
 			collapsible
 		>
 			<AccordionItem value="item-1">
-				<AccordionTrigger>Trigger</AccordionTrigger>
+				<AccordionTrigger>Accordion 1</AccordionTrigger>
 				<AccordionContent>
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo,
 					eligendi provident. Omnis fuga dicta voluptates obcaecati nisi nemo,
@@ -24,7 +24,7 @@ export default function AccordionDemo() {
 				</AccordionContent>
 			</AccordionItem>
 			<AccordionItem value="item-2">
-				<AccordionTrigger>Trigger 2</AccordionTrigger>
+				<AccordionTrigger>Accordion 2</AccordionTrigger>
 				<AccordionContent>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
 					consectetur quod pariatur eligendi fugiat!
@@ -47,7 +47,7 @@ const AccordionItem = React.forwardRef(
 	) => (
 		<Accordion.Item
 			className={cn(
-				"flex flex-col first:rounded-t last:rounded-b overflow-hidden data-[state=closed]:border-b border-b-blue-300 last:data-[state=closed]:border-b-0",
+				"flex flex-col overflow-hidden data-[state=closed]:border-b border-b-blue-300 last:data-[state=closed]:border-b-0",
 				className
 			)}
 			ref={forwardedRef}
