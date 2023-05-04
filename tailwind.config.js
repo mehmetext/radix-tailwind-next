@@ -16,10 +16,20 @@ module.exports = {
 					from: { height: "var(--radix-accordion-content-height)" },
 					to: { height: 0 },
 				},
+				alertDialogShowOverlay: {
+					from: { opacity: 0 },
+					to: { opaciyy: 1 },
+				},
+				alertDialogShowContent: {
+					from: { opacity: 0 },
+					to: { opaciyy: 1 },
+				},
 			},
 			animation: {
 				slideDownAccordion: "slideDownAccordion 150ms",
 				slideUpAccordion: "slideUpAccordion 150ms",
+				alertDialogShowOverlay: "alertDialogShowOverlay 150ms",
+				alertDialogShowContent: "alertDialogShowContent 150ms",
 			},
 		},
 	},
