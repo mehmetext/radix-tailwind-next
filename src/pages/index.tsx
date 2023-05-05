@@ -1,5 +1,6 @@
 import AccordionDemo from "@/components/AccordionDemo";
 import AlertDialogDemo from "@/components/AlertDialogDemo";
+import CheckboxDemo from "@/components/CheckboxDemo";
 import PopoverDemo from "@/components/PopoverDemo";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
 			<PopoverDemo />
 			<AccordionDemo />
 			<AlertDialogDemo />
+			<CheckboxDemo />
 		</main>
 	);
 }
